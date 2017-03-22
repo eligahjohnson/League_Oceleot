@@ -9,6 +9,17 @@ public class HelloWorld {
 		liljack.setSpeed(10);
 		liljack.move(100);
 		liljack.turn(30);
+		liljack.penDown();
+		liljack.setSpeed(10);
+		liljack.move(100);
+		liljack.turn(30);
+		liljack.penDown();
+		liljack.setSpeed(10);
+		liljack.move(100);
+		liljack.turn(30);liljack.penDown();
+		liljack.setSpeed(10);
+		liljack.move(100);
+		liljack.turn(30);
 	}
 		
 		
