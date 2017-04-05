@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class DiceRoll{
+	Random liljack= new Random();
+	
 	JFrame window = new JFrame("Roll the Dice!");
 	JPanel panel = new JPanel();
 	JButton rollButton = new JButton("CLICK HERE TO ROLL");
@@ -41,20 +43,20 @@ public class DiceRoll{
 		rollButton.addActionListener((e)->{
 			
 			
-			int randomChoice = 0;
+			int randomChoice =liljack.nextInt(7);
 			
 			
-			if(randomChoice == 0){
+			if(randomChoice == 1){
 				label.setIcon(new ImageIcon(oneImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 5){
 				label.setIcon(new ImageIcon(twoImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 4){
 				label.setIcon(new ImageIcon(threeImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 3){
 				label.setIcon(new ImageIcon(fourImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 2){
 				label.setIcon(new ImageIcon(fiveImg));
 			}
 			else{
